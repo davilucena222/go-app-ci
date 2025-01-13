@@ -1,7 +1,7 @@
 version: '3'
 services:
   postgres:
-    image: "postgres:14"
+    image: "postgres"
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
@@ -17,7 +17,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: "gui@alura.com"
       PGADMIN_DEFAULT_PASSWORD: "123456"
     ports:
-      - "15632:80"
+      - "54321:80"
     depends_on:
       - postgres
 
